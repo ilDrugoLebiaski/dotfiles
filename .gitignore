@@ -1,16 +1,22 @@
-# Vim Plugins
+# ── Vim plugins (managed by vim-plug) ────────────────────────────────────────
 vim/.vim/plugged/
 
-# Tmux Plugins
+# ── Vim runtime artifacts ─────────────────────────────────────────────────────
+vim/.vim/.netrwhist
+
+# ── Neovim lockfile (optional: remove if you want to pin plugin versions) ─────
+nvim/.config/nvim/lazy-lock.json
+
+# ── Tmux plugins (managed by tpm) ─────────────────────────────────────────────
 tmux/.tmux/plugins/
 
-.cache/
-*.env
-.env*
+# ── Noctalia runtime / state ───────────────────────────────────────────────────
+noctalia/.config/noctalia/plugins/*/notecards/
+noctalia/.config/noctalia/plugins/*/pinned.json
 
-# Linux thumbnails
+# ── OS / editor junk ──────────────────────────────────────────────────────────
+.DS_Store
 Thumbs.db
-
-# Swap/backup files
-*.swp
 *~
+*.swp
+*.swo
