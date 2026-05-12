@@ -1,0 +1,49 @@
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^launcher$"
+
+    background-effect {
+        blur true
+    }
+}
+
+layer-rule {
+    match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+    background-effect {
+        xray false
+    }
+}
+
+window-rule {
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"firefox$"# 
+    open-maximized true
+}
+
+window-rule {
+    match is-floating=true
+
+    shadow {
+        on
+    }
+}
+
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+}

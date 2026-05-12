@@ -1,0 +1,40 @@
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+environment {
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+overview {
+    zoom 0.33333
+}
+
+cursor {
+    xcursor-theme "Bibata_Spirit"
+    xcursor-size 32
+    hide-when-typing
+    hide-after-inactive-ms 2000
+}
+
+blur {
+    passes 2
+}
+
+
+debug {
+  honor-xdg-activation-with-invalid-serial
+}

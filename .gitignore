@@ -1,0 +1,16 @@
+# Vim Plugins
+vim/.vim/plugged/
+
+# Tmux Plugins
+tmux/.tmux/plugins/
+
+.cache/
+*.env
+.env*
+
+# Linux thumbnails
+Thumbs.db
+
+# Swap/backup files
+*.swp
+*~
