@@ -155,7 +155,7 @@ Personal configuration files managed with [GNU Stow](https://www.gnu.org/softwar
 Clone the repo into your home directory:
 
 ```bash
-git clone https://github.com/<user>/dotfiles.git ~/.dotfiles
+git clone https://github.com/ilDrugoLebiaski/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
