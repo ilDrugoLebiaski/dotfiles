@@ -162,7 +162,7 @@ cd ~/.dotfiles
 ### Apply all packages
 
 ```bash
-stow */
+stow *
 ```
 
 ### Apply a single package
