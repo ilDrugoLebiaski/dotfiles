@@ -42,7 +42,7 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0,
+        "backgroundOpacity": 0.8,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
@@ -63,7 +63,7 @@
         ],
         "mouseWheelAction": "volume",
         "mouseWheelWrap": true,
-        "outerCorners": true,
+        "outerCorners": false,
         "position": "top",
         "reverseScroll": true,
         "rightClickAction": "controlCenter",
@@ -71,9 +71,9 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
-        "showOutline": true,
+        "showOutline": false,
         "useSeparateOpacity": true,
         "widgetSpacing": 6,
         "widgets": {
@@ -407,7 +407,7 @@
         "enableBlurBehind": false,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
-        "enableShadows": true,
+        "enableShadows": false,
         "forceBlackScreenCorners": false,
         "iRadiusRatio": 1,
         "keybinds": {
@@ -710,13 +710,13 @@
         "fontDefaultScale": 0.9,
         "fontFixed": "JetBrainsMono Nerd Font Mono",
         "fontFixedScale": 0.9,
-        "panelBackgroundOpacity": 0,
+        "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": false,
         "scrollbarAlwaysVisible": false,
-        "settingsPanelMode": "attached",
+        "settingsPanelMode": "centered",
         "settingsPanelSideBarCardStyle": true,
         "tooltipsEnabled": true,
-        "translucentWidgets": false
+        "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": false,

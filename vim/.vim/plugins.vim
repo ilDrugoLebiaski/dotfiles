@@ -6,5 +6,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'yegappan/lsp'
 Plug 'sheerun/vim-polyglot'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'sbdchd/neoformat'
 
 call plug#end()

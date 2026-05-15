@@ -8,6 +8,7 @@ layer-rule {
 
     background-effect {
         blur true
+        xray false
     }
 }
 

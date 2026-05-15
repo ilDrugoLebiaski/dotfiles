@@ -1,5 +1,6 @@
 return { -- Collection of various small independent plugins/modules
 	"nvim-mini/mini.nvim",
+	version = "*",
 	config = function()
 		require("mini.ai").setup({
 			mappings = {
@@ -8,5 +9,6 @@ return { -- Collection of various small independent plugins/modules
 			},
 			n_lines = 500,
 		})
+		require("mini.diff").setup()
 	end,
 }

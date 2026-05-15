@@ -59,7 +59,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls $realpath'
 
 alias zshconf="nvim ~/.zshrc"
 alias reload="source ~/.zshrc"
-alias niriconf="nvim ~/.config/niri/config.kdl"
+alias niriconf="nvim ~/.config/niri/"
 alias termconf="nvim $HOME/.config/kitty/kitty.conf"
 
 alias ls="eza --icons --group-directories-first"
