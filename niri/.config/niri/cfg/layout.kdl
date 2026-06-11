@@ -1,33 +1,30 @@
 layout {
 
-    gaps 6
-    center-focused-column "never"
+    gaps 5
+    center-focused-column "on-overflow"
     always-center-single-column
 
     preset-column-widths {
+        proportion 0.25
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 0.75
     }
 
-    default-column-width { proportion 0.5; }
+    default-column-width { }
 
     focus-ring {
-        on
-        width 1
-    }
-    
-    border {
         on
         width 2
     }
 
+    border {
+        off
+    }
+
     shadow {
-        on
-        softness 30
-        spread 5
-        offset x=0 y=5
-        draw-behind-window false
+        off
     }
 
     struts {}
