@@ -31,7 +31,8 @@ cursor {
 }
 
 blur {
-    passes 2
+    passes 3
+    noise 0.05
 }
 
 
