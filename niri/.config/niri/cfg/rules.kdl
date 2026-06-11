@@ -20,20 +20,8 @@ layer-rule {
 }
 
 window-rule {
-  background-effect {
-    blur true
-    xray false
-  }
-}
-
-window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
-}
-
-window-rule {
-    match app-id=r#"firefox$"# 
-    open-maximized true
 }
 
 window-rule {
@@ -41,10 +29,29 @@ window-rule {
 
     shadow {
         on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        draw-behind-window false
     }
 }
 
 window-rule {
     geometry-corner-radius 20
     clip-to-geometry true
+    draw-border-with-background false
+    background-effect {
+        blur true
+        xray false
+    }
+    opacity 0.7
+
+    popups {
+        opacity 1.00
+    }
+}
+
+window-rule {
+    match is-focused=true
+    opacity 0.9
 }
