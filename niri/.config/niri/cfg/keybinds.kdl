@@ -1,13 +1,15 @@
 binds {
-    Mod+Shift+O { show-hotkey-overlay; }
+    Mod+Shift+apostrophe { show-hotkey-overlay; }
 
-    Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+B hotkey-overlay-title="Run Browser: firefox" { spawn "firefox"; }
-    Mod+Shift+B hotkey-overlay-title="Run Browser: chromium" { spawn "chromium"; }
-    Mod+E hotkey-overlay-title="Run File Explorer: yazi" { spawn-sh "kitty -e yazi"; }
-    Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Mod+S hotkey-overlay-title="" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
+    Mod+Return hotkey-overlay-title="Terminal" { spawn "kitty"; }
+    Mod+D hotkey-overlay-title="Application Launcher" { spawn "fuzzel"; }
+    Mod+B hotkey-overlay-title="Run a browser" { spawn "/home/ildrugo/.config/fuzzel/scripts/browser.sh"; }
+    Mod+E hotkey-overlay-title="File Explorer: nemo" { spawn "nemo"; }
+    Mod+Shift+E hotkey-overlay-title="File Explorer: yazi" { spawn-sh "kitty -e yazi"; }
+    Mod+Space hotkey-overlay-title="Noctalia Shell: Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Mod+S hotkey-overlay-title="Noctalia Shell: Control Center" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
+    Mod+I hotkey-overlay-title="Noctalia Shell: Settings" { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
+    Mod+W hotkey-overlay-title="Noctalia Shell: Wallpaper Selector" { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }
 
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+ -l 1.0"; }
@@ -25,6 +27,7 @@ binds {
 
     Mod+O repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
+    Mod+Ctrl+O  { toggle-window-rule-opacity; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -78,8 +81,8 @@ binds {
 
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+N         { move-workspace-down; }
-    Mod+Shift+P         { move-workspace-up; }
+    Mod+Shift+Ctrl+N         { move-workspace-down; }
+    Mod+Shift+Ctrl+P         { move-workspace-up; }
 
     Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
@@ -156,7 +159,7 @@ binds {
 
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-    Mod+Shift+E { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lock"; }
-    Ctrl+Alt+Delete { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+Alt+L hotkey-overlay-title="Noctalia Shell: Lockscreen" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lock"; }
+    Ctrl+Alt+Delete hotkey-overlay-title="Noctalia Shell: Session Menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 
 }
