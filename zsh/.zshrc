@@ -66,6 +66,12 @@ alias ls="eza --icons --group-directories-first"
 alias ll="eza -lah --icons --group-directories-first"
 alias tree="eza --tree --icons"
 
+alias pg-start="sudo systemctl start postgresql"
+alias pg-stop="sudo systemctl stop postgresql"
+alias pg-status="systemctl status postgresql"
+alias pg-restart="sudo systemctl restart postgresql"
+alias pg-log="journalctl -xeu postgresql.service"
+
 eval "$(zoxide init zsh)"
 eval "$(tmuxifier init -)"
 eval "$(fzf --zsh)"
