@@ -53,5 +53,5 @@ window-rule {
 
 window-rule {
     match is-focused=true
-    opacity 0.9
+    opacity 0.85
 }
