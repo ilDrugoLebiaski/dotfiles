@@ -42,7 +42,7 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.8,
+        "backgroundOpacity": 0.85,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
@@ -399,7 +399,7 @@
         "clockFormat": "hh\\nmm",
         "clockStyle": "analog",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.2,
+        "dimmerOpacity": 0.1,
         "enableBlurBehind": false,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
@@ -519,9 +519,9 @@
         "disableWallpaper": true
     },
     "notifications": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.85,
         "clearDismissed": true,
-        "criticalUrgencyDuration": 15,
+        "criticalUrgencyDuration": 10,
         "density": "default",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
@@ -532,7 +532,7 @@
         "lowUrgencyDuration": 3,
         "monitors": [
         ],
-        "normalUrgencyDuration": 8,
+        "normalUrgencyDuration": 5,
         "overlayLayer": true,
         "respectExpireTimeout": false,
         "saveToHistory": {
@@ -706,7 +706,7 @@
         "fontDefaultScale": 0.9,
         "fontFixed": "JetBrainsMono Nerd Font Mono",
         "fontFixedScale": 0.9,
-        "panelBackgroundOpacity": 0.8,
+        "panelBackgroundOpacity": 0.85,
         "panelsAttachedToBar": false,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "centered",
