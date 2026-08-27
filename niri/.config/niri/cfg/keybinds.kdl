@@ -2,28 +2,22 @@ binds {
     Mod+Shift+apostrophe { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Terminal" { spawn "kitty"; }
-    Mod+D hotkey-overlay-title="Application Launcher" { spawn "fuzzel"; }
-    Mod+B hotkey-overlay-title="Run a browser" { spawn "/home/ildrugo/.config/fuzzel/scripts/browser.sh"; }
-    Mod+E hotkey-overlay-title="File Explorer: nemo" { spawn "nemo"; }
+    Mod+B hotkey-overlay-title="Browser" {spawn-sh "noctalia msg panel-toggle launcher /web"; }
+    Mod+C hotkey-overlay-title="Calculator" { spawn "gnome-calculator"; }
+    Mod+E hotkey-overlay-title="File Explorer: nautilus" { spawn "nautilus"; }
     Mod+Shift+E hotkey-overlay-title="File Explorer: yazi" { spawn-sh "kitty -e yazi"; }
-    Mod+Space hotkey-overlay-title="Noctalia Shell: Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Mod+S hotkey-overlay-title="Noctalia Shell: Control Center" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
-    Mod+I hotkey-overlay-title="Noctalia Shell: Settings" { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
-    Mod+W hotkey-overlay-title="Noctalia Shell: Wallpaper Selector" { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }
 
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+ -l 1.0"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02-"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    Mod+Space hotkey-overlay-title="Noctalia: Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+S hotkey-overlay-title="Noctalia: Settings" { spawn-sh "noctalia msg settings-toggle"; }
+    Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
 
-    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
-
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    // Audio & Brightness
+    XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute { spawn-sh "noctalia msg volume-mute"; }
+    XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 
     Mod+O repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
@@ -140,7 +134,7 @@ binds {
 
     Mod+Ctrl+F { expand-column-to-available-width; }
 
-    Mod+C { center-column; }
+    Mod+Shift+C { center-column; }
 
     Mod+Ctrl+C { center-visible-columns; }
 
@@ -159,7 +153,6 @@ binds {
 
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-    Mod+Alt+L hotkey-overlay-title="Noctalia Shell: Lockscreen" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lock"; }
-    Ctrl+Alt+Delete hotkey-overlay-title="Noctalia Shell: Session Menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
-
+    Mod+Alt+L hotkey-overlay-title="Noctalia Shell: Lockscreen" { spawn-sh "noctalia msg  session lock"; }
+    Ctrl+Alt+Delete hotkey-overlay-title="Noctalia Shell: Session Menu" { spawn-sh "noctalia msg panel-toggle session"; }
 }

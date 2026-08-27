@@ -1,7 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:/home/ildrugo/.local/bin"
-export PATH="$PATH:/home/ildrugo/.cargo/bin"
-export PATH="$HOME/.tmuxifier/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.tmuxifier/bin:$PATH"
 
 export LANG=it_IT.UTF-8
 
@@ -35,12 +33,13 @@ bindkey '^n' history-search-forward
 
 ##########
 # Plugin #
-##########   
- 
+##########
+
 plugins=(
 	git
 	vi-mode
 	sudo
+    colored-man-pages
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	fzf-tab

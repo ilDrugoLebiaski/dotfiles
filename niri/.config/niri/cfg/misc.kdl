@@ -1,5 +1,5 @@
 prefer-no-csd
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Immagini/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 hotkey-overlay {
     skip-at-startup
@@ -33,9 +33,8 @@ cursor {
 
 blur {
     passes 3
-    noise 0.05
+    noise 0.1
 }
-
 
 debug {
   honor-xdg-activation-with-invalid-serial
