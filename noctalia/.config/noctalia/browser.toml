@@ -1,0 +1,20 @@
+[shell.launcher.dmenu.entry.browser]
+
+label = "Browser"
+prefix = "web"
+glyph = "world"
+global = false
+
+command = """
+printf 'Firefox - IlDrugo\nFirefox - Biagio\nFirefox - Private\nChromium - Uni\nTor\n'
+"""
+
+exec = """
+case "{selection}" in
+  "Firefox - IlDrugo") firefox -P IlDrugo ;;
+  "Firefox - Biagio") firefox -P Biagio ;;
+  "Firefox - Private") firefox -P Private ;;
+  "Chromium - Uni") chromium --profile-directory="Default" ;;
+  "Tor") tor-browser ;;
+esac
+"""

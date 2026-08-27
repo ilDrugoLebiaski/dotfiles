@@ -41,19 +41,19 @@
     },
     "bar": {
         "autoHideDelay": 500,
-        "autoShowDelay": 150,
-        "backgroundOpacity": 0.85,
+        "autoShowDelay": 100,
+        "backgroundOpacity": 0,
         "barType": "simple",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 1,
-        "contentPadding": 6,
+        "capsuleOpacity": 0.85,
+        "contentPadding": 8,
         "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 0.9,
+        "fontScale": 1,
         "frameRadius": 12,
         "frameThickness": 8,
-        "hideOnOverview": false,
+        "hideOnOverview": true,
         "marginHorizontal": 4,
         "marginVertical": 4,
         "middleClickAction": "none",
@@ -71,11 +71,11 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
         ],
-        "showCapsule": false,
+        "showCapsule": true,
         "showOnWorkspaceSwitch": true,
-        "showOutline": false,
+        "showOutline": true,
         "useSeparateOpacity": true,
-        "widgetSpacing": 6,
+        "widgetSpacing": 8,
         "widgets": {
             "center": [
                 {
@@ -97,79 +97,32 @@
                     "focusedColor": "primary",
                     "followFocusedScreen": false,
                     "fontWeight": "bold",
-                    "groupedBorderOpacity": 1,
-                    "hideUnoccupied": false,
+                    "groupedBorderOpacity": 0,
+                    "hideUnoccupied": true,
                     "iconScale": 0.8,
                     "id": "Workspace",
-                    "labelMode": "index",
+                    "labelMode": "none",
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
-                    "showApplications": false,
+                    "showApplications": true,
                     "showApplicationsHover": false,
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
-                },
-                {
-                    "colorizeIcons": false,
-                    "hideMode": "hidden",
-                    "id": "ActiveWindow",
-                    "maxWidth": 145,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "showText": true,
-                    "textColor": "none",
-                    "useFixedWidth": false
                 }
             ],
             "right": [
                 {
                     "defaultSettings": {
-                        "autoPaste": false,
-                        "autoPasteDelay": 300,
-                        "autoPasteOnRightClick": false,
-                        "cardColors": {
-                        },
-                        "customColors": {
-                        },
-                        "enableTodoIntegration": false,
-                        "fullscreenMode": false,
-                        "hidePanelBackground": false,
-                        "notecardsEnabled": true,
-                        "panelHeight": 0,
-                        "panelWidth": 1450,
-                        "pincardsEnabled": true,
-                        "showCloseButton": true
+                        "autoMount": false,
+                        "fileBrowser": "yazi",
+                        "hideWhenEmpty": false,
+                        "iconColor": "none",
+                        "showBadge": false,
+                        "showNotifications": true,
+                        "terminalCommand": "kitty"
                     },
-                    "id": "plugin:clipper"
-                },
-                {
-                    "defaultSettings": {
-                        "completedCount": 0,
-                        "count": 0,
-                        "current_page_id": 0,
-                        "exportEmptySections": false,
-                        "exportFormat": "markdown",
-                        "exportPath": "~/Documents",
-                        "isExpanded": false,
-                        "pages": [
-                            {
-                                "id": 0,
-                                "name": "General"
-                            }
-                        ],
-                        "priorityColors": {
-                            "high": "#f44336",
-                            "low": "#9e9e9e",
-                            "medium": "#2196f3"
-                        },
-                        "showBackground": true,
-                        "showCompleted": true,
-                        "todos": [
-                        ],
-                        "useCustomColors": false
-                    },
-                    "id": "plugin:todo"
+                    "id": "plugin:usb-drive-manager"
                 },
                 {
                     "hideWhenZero": false,
@@ -201,18 +154,6 @@
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
                     "showPowerProfiles": false
-                },
-                {
-                    "defaultSettings": {
-                        "autoMount": false,
-                        "fileBrowser": "yazi",
-                        "hideWhenEmpty": false,
-                        "iconColor": "none",
-                        "showBadge": false,
-                        "showNotifications": true,
-                        "terminalCommand": "kitty"
-                    },
-                    "id": "plugin:usb-drive-manager"
                 },
                 {
                     "compactMode": true,
@@ -278,11 +219,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "muted",
+        "generationMethod": "tonal-spot",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Tokyo Night",
+        "predefinedScheme": "Gruvbox",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -405,7 +346,7 @@
         "enableLockScreenMediaControls": false,
         "enableShadows": false,
         "forceBlackScreenCorners": false,
-        "iRadiusRatio": 1,
+        "iRadiusRatio": 0.5,
         "keybinds": {
             "keyDown": [
                 "Down"
@@ -439,7 +380,7 @@
         ],
         "lockScreenTint": 0,
         "passwordChars": false,
-        "radiusRatio": 1,
+        "radiusRatio": 0.5,
         "reverseScroll": false,
         "scaleRatio": 1,
         "screenRadiusRatio": 1,
@@ -496,7 +437,7 @@
         "weatherTaliaMascotAlways": false
     },
     "network": {
-        "bluetoothAutoConnect": true,
+        "bluetoothAutoConnect": false,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
         "bluetoothRssiPollIntervalMs": 60000,
@@ -701,12 +642,12 @@
         "enableUserTheming": true
     },
     "ui": {
-        "boxBorderEnabled": false,
+        "boxBorderEnabled": true,
         "fontDefault": "JetBrainsMono NF",
         "fontDefaultScale": 0.9,
         "fontFixed": "JetBrainsMono Nerd Font Mono",
         "fontFixedScale": 0.9,
-        "panelBackgroundOpacity": 0.85,
+        "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": false,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "centered",
@@ -716,13 +657,13 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/ildrugo/Immagini",
+        "directory": "/home/ildrugo/Immagini/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
         ],
         "fillColor": "#2a2a37",
-        "fillMode": "repeat",
+        "fillMode": "crop",
         "hideWallpaperFilenames": true,
         "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
@@ -730,7 +671,7 @@
         "overviewBlur": 0.8,
         "overviewEnabled": true,
         "overviewTint": 0.6,
-        "panelPosition": "follow_bar",
+        "panelPosition": "center",
         "randomIntervalSec": 300,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
